@@ -10,6 +10,10 @@ import java.util.Date;
  */
 public class WealthElasticJobDemo implements SimpleJob {
 
+    /**
+     * 在这里，实现你的定时任务业务逻辑即可
+     * @param context
+     */
     @Override
     public void execute(ShardingContext context) {
        System.out.println(new Date() + " 准备执行定时任务了==》");
