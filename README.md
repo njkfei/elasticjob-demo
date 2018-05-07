@@ -5,18 +5,17 @@
 
 ## 引入pom依赖
 ```$xslt
-	<!-- import elastic-job lite core -->
 		<dependency>
-			<groupId>io.elasticjob</groupId>
+			<groupId>com.dangdang</groupId>
 			<artifactId>elastic-job-lite-core</artifactId>
-			<version>${lasted.release.version}</version>
+			<version>${elastic.job.version}</version>
 		</dependency>
 
 		<!-- import other module if need -->
 		<dependency>
-			<groupId>io.elasticjob</groupId>
+			<groupId>com.dangdang</groupId>
 			<artifactId>elastic-job-lite-spring</artifactId>
-			<version>${lasted.release.version}</version>
+			<version>${elastic.job.version}</version>
 		</dependency>
 ```
 

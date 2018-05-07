@@ -1,7 +1,8 @@
 package com.example.demo;
 
-import io.elasticjob.lite.api.ShardingContext;
-import io.elasticjob.lite.api.simple.SimpleJob;
+
+import com.dangdang.ddframe.job.api.ShardingContext;
+import com.dangdang.ddframe.job.api.simple.SimpleJob;
 import lombok.Data;
 
 import java.util.Date;
