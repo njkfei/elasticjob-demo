@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
-		<lasted.release.version> 3.0.0.M1-SNAPSHOT</lasted.release.version>
+		<lasted.release.version>2.1.5</lasted.release.version>
 	</properties>
 
 	<dependencies>
@@ -54,14 +54,14 @@
 
 		<!-- import elastic-job lite core -->
 		<dependency>
-			<groupId>io.elasticjob</groupId>
+			<groupId>com.dangdang</groupId>
 			<artifactId>elastic-job-lite-core</artifactId>
 			<version>${lasted.release.version}</version>
 		</dependency>
 
 		<!-- import other module if need -->
 		<dependency>
-			<groupId>io.elasticjob</groupId>
+			<groupId>com.dangdang</groupId>
 			<artifactId>elastic-job-lite-spring</artifactId>
 			<version>${lasted.release.version}</version>
 		</dependency>
