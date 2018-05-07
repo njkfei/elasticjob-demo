@@ -72,4 +72,4 @@ job管理控制台，连接zookeeper即可。注意，需要和名字空间names
 # 爬坑
 序号 | 问题 | 解决方式
 ---|---|---
-1 |使用spring方式启动，会报错找不到bean | <job:simple> 标签的job-ref属性所引用的 <bean> ，必须在这个<bean> 后面被引用， 所以 <job:simple> 需要写在 你所引用的 <bean> 的后面。
+1 |使用spring方式启动，会报错找不到bean | job:simple 标签的job-ref属性所引用的 bean ，必须在这个 bean 后面被引用， 所以 job:simple 需要写在 你所引用的 bean 的后面。
