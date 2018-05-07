@@ -53,5 +53,19 @@ public class WealthElasticJobDemo implements SimpleJob {
 
 > 程序应该可以启动了。
 
+# 复杂job怎么搞
+如果要执行 job的bean，引用了其它bean,这个怎么搞？
+答案是引入job-ref
+
+```$xslt
+ <bean id="wealthElasticJobDemo2" class="com.example.demo.WealthElasticJobDemo2" >
+        <property name="data" value="hello,job"/>
+    </bean>
+
+    <!--configure job -->
+    <job:simple id="wealthElasticJobDemo2Job"  job-ref="wealthElasticJobDemo2" registry-center-ref="regCenter" cron="0/1 * * * * ?" sharding-total-count="1"/>
+
+```
+
 # job管理控制台
 job管理控制台，连接zookeeper即可。注意，需要和名字空间namespace保持一致。
