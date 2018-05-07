@@ -23,7 +23,8 @@
     </bean>
 
     <!--configure job -->
-    <job:simple id="wealthElasticJobDemo2Job"  job-ref="wealthElasticJobDemo2" registry-center-ref="regCenter" cron="0/1 * * * * ?" sharding-total-count="1"/>
+    <job:simple id="wealthElasticJobDemo2Job"  job-ref="wealthElasticJobDemo2" registry-center-ref="regCenter" cron="0/1 * * * * ?"
+                description="复杂对象配置的job demo" sharding-total-count="1"/>
 
 
 </beans>
