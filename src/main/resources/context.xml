@@ -16,7 +16,7 @@
     <reg:zookeeper id="regCenter" server-lists="zookeeper:2181" namespace="wealth-job" base-sleep-time-milliseconds="1000" max-sleep-time-milliseconds="3000" max-retries="3" />
 
     <!--configure job -->
-    <job:simple id="wealthElasticJobDemo"  class="com.example.demo.WealthElasticJobDemo" description="定时任务Demo" registry-center-ref="regCenter" cron="*/40 */1 * * * ?" sharding-total-count="1"/>
+    <!--<job:simple id="wealthElasticJobDemo"  class="com.example.demo.WealthElasticJobDemo" description="定时任务Demo" registry-center-ref="regCenter" cron="*/40 */1 * * * ?" sharding-total-count="1"/>-->
 
     <bean id="wealthElasticJobDemo2" class="com.example.demo.WealthElasticJobDemo2" >
         <property name="data" value="hello,job"/>
@@ -24,7 +24,7 @@
 
     <!--configure job -->
     <job:simple id="wealthElasticJobDemo2Job"  job-ref="wealthElasticJobDemo2" registry-center-ref="regCenter" cron="0/1 * * * * ?"
-                description="复杂对象配置的job demo" sharding-total-count="1"/>
+                description="复杂对象配置的job demo" sharding-total-count="3" sharding-item-parameters="0=A,1=B,2=C"/>
 
 
 </beans>

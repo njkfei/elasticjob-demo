@@ -20,6 +20,7 @@ public class WealthElasticJobDemo2 implements SimpleJob {
      */
     @Override
     public void execute(ShardingContext context) {
-       System.out.println(new Date() + "复杂点的对象  准备执行定时任务了==》" + data);
+       System.out.println(context.toString());
+       System.out.println(new Date() + "复杂点的对象  准备执行定时任务了==》" + data + " sharding id: " + context.getTaskId());
     }
 }
